@@ -165,7 +165,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt25.12-cmcc_rax3000m")" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt25.12-psg-1218")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "psg-1218" >> release.txt
         echo "后台：192.168.6.1" >> release.txt
